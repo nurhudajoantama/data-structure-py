@@ -1,5 +1,5 @@
 import unittest
-from linkedlist.LinkedList import LinkedList
+from linked_list.LinkedList import LinkedList
 
 
 class LinkedListSpec(unittest.TestCase):
