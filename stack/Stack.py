@@ -2,7 +2,7 @@ class Stack:
     def __init__(self):
         self.data = []
 
-    def append(self, data):
+    def push(self, data):
         self.data.append(data)
         return data
 

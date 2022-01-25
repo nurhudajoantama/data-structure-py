@@ -8,16 +8,16 @@ class NodeSpec(unittest.TestCase):
         stack = Stack()
         self.assertIsNotNone(stack)
 
-    def test_append(self):
+    def test_push(self):
         stack = Stack()
-        stack.append(1)
+        stack.push(1)
         self.assertEqual(stack.data[0], 1)
-        self.assertEqual(stack.append(2), 2)
+        self.assertEqual(stack.push(2), 2)
         self.assertEqual(stack.data[1], 2)
 
     def test_pop(self):
         stack = Stack()
-        stack.append(1)
+        stack.push(1)
         pop_res = stack.pop()
         self.assertEqual(pop_res, 1)
 
@@ -27,9 +27,9 @@ class NodeSpec(unittest.TestCase):
 
     def test_multiple_action(self):
         stack = Stack()
-        self.assertEqual(stack.append(1), 1)
-        self.assertEqual(stack.append(2), 2)
-        self.assertEqual(stack.append(3), 3)
+        self.assertEqual(stack.push(1), 1)
+        self.assertEqual(stack.push(2), 2)
+        self.assertEqual(stack.push(3), 3)
         self.assertEqual(stack.pop(), 3)
         self.assertEqual(stack.pop(), 2)
         self.assertEqual(stack.pop(), 1)
