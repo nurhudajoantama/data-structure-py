@@ -15,6 +15,13 @@ class NodeSpec(unittest.TestCase):
         self.assertEqual(stack.push(2), 2)
         self.assertEqual(stack.data[1], 2)
 
+    def test_peek(self):
+        stack = Stack()
+        self.assertIsNone(stack.peek())
+        stack.push(1)
+        self.assertEqual(stack.peek(), 1)
+        self.assertEqual(stack.peek(), 1)
+
     def test_pop(self):
         stack = Stack()
         stack.push(1)
