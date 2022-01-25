@@ -1,5 +1,5 @@
 import unittest
-from Stack import Stack
+from stack.Stack import Stack
 
 
 class NodeSpec(unittest.TestCase):
