@@ -2,7 +2,7 @@ import unittest
 from stack.Stack import Stack
 
 
-class NodeSpec(unittest.TestCase):
+class StackSpec(unittest.TestCase):
 
     def test_create(self):
         stack = Stack()
