@@ -1,4 +1,3 @@
-from inspect import stack
 import unittest
 from Stack import Stack
 
