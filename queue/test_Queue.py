@@ -2,7 +2,7 @@ import unittest
 from queue.Queue import Queue
 
 
-class NodeSpec(unittest.TestCase):
+class QueueSpec(unittest.TestCase):
     def test_create(self):
         queue = Queue()
         self.assertIsNotNone(queue)
