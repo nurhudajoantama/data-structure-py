@@ -14,12 +14,10 @@ class NodeSpec(unittest.TestCase):
 
     def test_child(self):
         node = Node(1)
-        node2 = Node(2)
-        node3 = Node(3)
-        node.child.append(node2)
-        node.child.append(node3)
-        self.assertEqual(node.child[0], node2)
-        self.assertEqual(node.child[1], node3)
+        node.addChild(2)
+        node.addChild(3)
+        self.assertEqual(node.child[0].data, 2)
+        self.assertEqual(node.child[1].data, 3)
 
 
 if __name__ == '__main__':
